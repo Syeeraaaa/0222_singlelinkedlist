@@ -57,10 +57,7 @@ public:
     }
 
     bool listEmpty()
-    {
-        return (START == NULL);
-    }
-
+    
     bool search(int nim, Node **previous, Node **current)
     {
         *previous = START;
