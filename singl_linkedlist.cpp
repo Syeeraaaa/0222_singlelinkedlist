@@ -23,7 +23,7 @@ public:
     void addNode()
     {
         int nim;
-        cout << "\n Masukkan Nomor Mahasiswa: ";
+        cout << "\nMasukkan Nomor Mahasiswa: ";
         cin >> nim;
 
         Node *nodeBaru = new Node;
@@ -92,21 +92,7 @@ public:
 
     void traverse()
     {
-        if (listEmpty())
-        {
-            cout << "\nList Kosong\n";
-        }
-        else
-        {
-            cout << "\nData didalam list adalah:\n";
-            Node *currentNode = START;
-            while (currentNode != NULL)
-            {
-                cout << currentNode->noMhs << endl;
-                currentNode = currentNode->next;
-            }
-            cout << endl;
-        }
+       
     }
 };
 
