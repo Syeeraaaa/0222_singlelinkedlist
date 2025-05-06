@@ -112,7 +112,7 @@ public:
 
 int main()
 {
-    LinkedList msh;
+    LinkedList mhs;
     int nim;
     char ch;
     while (1)
@@ -132,14 +132,30 @@ int main()
         {
         case '1':
         {
-            msh.addNode();
+            mhs.addNode();
         }
         break;
 
         case '2':
         {
-            
+            if (mhs.listEmpty())
+                cout << endl
+                     << "list kosong " << endl;
+            break;
+
+            cout << endl
+                 << "\nMasukkan no mhasiswa yang akan dihapus : ";
+            cin >> nim;
+            if (mhs.delNode(nim) == false)
+                cout << endl
+                     << "Data tidak ditambahkan " << endl;
+
+            else
+                cout << endl
+                     << "Data dengan nomor mahasiswa " << nim << "berhasil dihapus" << endl;
         }
+        break;
+        case '3':
         }
     }
 }
